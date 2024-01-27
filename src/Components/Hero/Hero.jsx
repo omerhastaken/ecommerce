@@ -40,15 +40,52 @@ const Dilay = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  padding-left: 180px
+  padding-left: 180px;
+  line-height: 1.1;
+
+  h2{
+    color: #090909;
+    font-size: 26pxx;
+    font-weight: 600;
+  }
+
+  p{
+    color: #171717;
+    font-size: 100px;
+    font-weight: 700;
+
+  }
+
 `
 const RightSide = styled.div`
-
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `    
 const HandIcon = styled.div`
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img{
+    height: 105px;
+  }
+
 `
 
 const Latest = styled.div`
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 310px;
+  height: 70px;
+  border-radius: 70px;
+  margin-top: 30px;
+  background: #ff4141;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
 `
