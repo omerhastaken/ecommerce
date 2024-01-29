@@ -22,7 +22,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  height: 90vh;
+  margin-bottom: 100px;
 
   h1 {
     color: #171717;
@@ -44,5 +44,5 @@ const Collections = styled.div`
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 50px;
     gap: 30px;
-    
+
 `
