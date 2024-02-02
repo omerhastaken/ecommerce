@@ -1,23 +1,24 @@
-import React, { useContext } from 'react'
+import React from 'react'
+import { useContext } from 'react'
 import styled from 'styled-components'
-import { Hero } from '../Components/Hero/Hero'
 import { ShopContext } from '../Context/ShopContext'
 import dropdown from '../Components/Assets/dropdown_icon.png'
 import Item from '../Components/Item'
+import all_product from '../Components/Assets/all_product'
 
 export const ShopCategory = (props) => {
   const {all_product} = useContext(ShopContext)
   return (
     <Container>
         <img src={props.banner} />
-        <indexSort>
+        <IndexSort>
           <p>
             <span>Showing 1-12</span> out of 36 products  
           </p>
           <Sort>
             Sort by <img src={dropdown} alt="" />
           </Sort>
-        </indexSort>
+        </IndexSort>
         <Products>
           {all_product.map((item,i)=>{
             if (props.category===item.category) {
@@ -33,10 +34,14 @@ export const ShopCategory = (props) => {
 }
 
 const Container = styled.div`
-
+  img{
+    /* display: block;
+    margin: 30px auto;
+    width: 82%; */
+  }
 `
 
-const indexSort = styled.div``
+const IndexSort = styled.div``
 
 const Sort = styled.div``
 
